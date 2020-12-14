@@ -25,7 +25,15 @@ body {
     top: 15px;
     left: 15px;
     border: 1px solid black;
+    transition-property: transform, box-shadow;
+    transition-duration: 500ms, 500ms;
+}
+
+.logo:hover {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transform: translate(-5px, -5px);
+    transition-property: transform, box-shadow;
+    transition-duration: 500ms, 500ms;
 }
 
 /* Стили для меню */ 
@@ -119,7 +127,17 @@ body {
 .social-link-logo {
     display: inline-block;
     max-width: 64px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
     margin: 10px 10px 10px 0;
+}
+
+.social-link-logo:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transform: translate(-5px, -5px);
+    transition-property: transform, box-shadow;
+    transition-duration: 500ms, 500ms;
 }
 
 /* Поправки в стилях для небольших экранов */ 
