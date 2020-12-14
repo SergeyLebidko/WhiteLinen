@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('./font/Robotolight.woff2') format('woff2'), url('./font/Robotolight.woff') format('woff'), url('./font/Robotolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    font-family: Roboto;
+    background-color: rgb(240, 240, 240);
+}
+
+/* Стили для заголовка и логотипа */
+
+.header {
+    position: relative;
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 520px;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для меню */ 
+
+.menu {
+    list-style-type: none;
+    background-image: linear-gradient(to bottom, rgb(255, 228, 181), rgb(210, 180, 140));
+}
+
+.menu a:link, .menu a:visited {
+    text-decoration: none;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: -5px;
+}
+
+.menu li a {
+    display: inline-block;
+    color: black;
+    padding: 15px 25px;
+}
+
+.menu li:hover a {
+    color: white;
+    background-image: linear-gradient(to bottom, rgb(135, 206, 250), rgb(30, 144, 255));
+}
+
+/* Стилия для блоков с контентом */
+
+.content-block {
+    display: flex;
+    max-width: 1100px;
+    font-size: 1.5em;
+    margin: 30px auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    text-align: justify;
+}
+
+.content-block:nth-of-type(5) {
+    border-bottom: none;
+}
+
+.first-content-block {
+    width: 220px;
+}
+
+.second-content-block {
+    width: 880px;
+}
+
+.content-block p {
+    margin: 20px;
+}
+
+.content-block ul {
+    list-style-type: disc;
+    margin-left: 10px;
+}
+
+/* Стили для галереи */ 
+
+.works-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-card {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color:white;
+}
+
+.work-card:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transform: translate(-5px, -5px);
+    transition-property: box-shadow, transform;
+    transition-duration: 500ms, 500ms;
+}
+
+.work-card img {
+    border-radius: 10px;
+    width: 390px;
+}
+
+/* Стиль для ссылок на социальные сети */
+
+.social-link-logo {
+    display: inline-block;
+    max-width: 64px;
+    margin: 10px 10px 10px 0;
+}
+
+/* Поправки в стилях для небольших экранов */ 
+
+@media (max-width: 1081px) {
+    .menu {
+        justify-content: center;
+    }
+    .menu li a {
+        font-size: 2em;
+        text-align: center;
+    }
+    .content-block {
+        flex-flow: row wrap;
+    }
+    .content-block div:first-child {
+        width: 100%;
+    }
+    .content-block div:last-child {
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .works-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .work-card {
+        max-width: 644px;
+    }
+    .work-card img {
+        width: 622px;
+    }
+    .work-card p {
+        font-size: 1.5em;
+        text-align: left;
+    }
+
+    .social-link-logo {
+        display: inline-block;
+        max-width: 128px;
+        margin: 10px 10px 10px 0;
+    }
+}
