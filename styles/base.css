@@ -36,11 +36,13 @@ body {
     transition-duration: 500ms, 500ms;
 }
 
-/* Стили для меню */ 
+/* Стили для меню */
 
 .menu {
     list-style-type: none;
-    background-image: linear-gradient(to bottom, rgb(255, 228, 181), rgb(210, 180, 140));
+    background-image: linear-gradient(to bottom, rgb(230, 230, 230), rgb(255, 255, 255));
+    border-bottom: 1px solid rgb(200, 200, 200);
+    border-top: 1px solid rgb(200, 200, 200);
 }
 
 .menu a:link, .menu a:visited {
@@ -96,7 +98,7 @@ body {
     margin-left: 10px;
 }
 
-/* Стили для галереи */ 
+/* Стили для галереи */
 
 .works-container {
     display: flex;
@@ -107,7 +109,7 @@ body {
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
-    background-color:white;
+    background-color: white;
 }
 
 .work-card:hover {
@@ -140,7 +142,7 @@ body {
     transition-duration: 500ms, 500ms;
 }
 
-/* Поправки в стилях для небольших экранов */ 
+/* Поправки в стилях для небольших экранов */
 
 @media (max-width: 1081px) {
     .menu {
@@ -161,7 +163,6 @@ body {
         margin-left: 15px;
         margin-right: 15px;
     }
-
     .works-container {
         flex-direction: column;
         align-items: center;
@@ -176,7 +177,6 @@ body {
         font-size: 1.5em;
         text-align: left;
     }
-
     .social-link-logo {
         display: inline-block;
         max-width: 128px;
